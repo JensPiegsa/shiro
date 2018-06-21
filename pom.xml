@@ -21,12 +21,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- pick up Apache distributionManagement for releasing (snapshots, releases, etc): -->
+    <!--<parent>-->
+        <!--<groupId>org.apache</groupId>-->
+        <!--<artifactId>apache</artifactId>-->
+        <!--<version>18</version>-->
+    <!--</parent>-->
     <parent>
+        <!--<groupId>org.apache.shiro</groupId>-->
+        <!--<artifactId>shiro-root</artifactId>-->
+        <!--<version>1.4.1-SNAPSHOT</version>-->
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
         <version>18</version>
+        <relativePath>./apache-18.pom.xml</relativePath>
     </parent>
-
     <groupId>org.apache.shiro</groupId>
     <artifactId>shiro-root</artifactId>
     <packaging>pom</packaging>
