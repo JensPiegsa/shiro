@@ -563,7 +563,7 @@ public abstract class AuthenticatingRealm extends CachingRealm implements Initia
      *         AuthenticationInfo could be found.
      * @throws AuthenticationException if authentication failed.
      */
-    public final AuthenticationInfo getAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
+    public AuthenticationInfo getAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 
         AuthenticationInfo info = getCachedAuthenticationInfo(token);
         if (info == null) {
